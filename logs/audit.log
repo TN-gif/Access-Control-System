@@ -1,0 +1,12 @@
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
+2025-11-21T15:12:33 [AUDIT_SUCCESS] user=admin action=LOGIN target=admin msg=登录成功 result=SUCCESS
+2025-11-21T15:21:23 [AUDIT_SUCCESS] user=guest_user action=LOGIN target=guest_user msg=登录成功 result=SUCCESS

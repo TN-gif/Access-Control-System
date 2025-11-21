@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%level] %logger{36} - %msg%n</Property>
+        <Property name="AUDIT_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss} [%marker] %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- System Log File -->
+        <RollingFile name="SystemLog" fileName="logs/system.log"
+                     filePattern="logs/system-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!-- Audit Log File -->
+        <RollingFile name="AuditLog" fileName="logs/audit.log"
+                     filePattern="logs/audit-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${AUDIT_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Audit Logger -->
+        <Logger name="AUDIT" level="info" additivity="false">
+            <AppenderRef ref="AuditLog"/>
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="SystemLog"/>
+        </Root>
+    </Loggers>
+</Configuration>
