@@ -1,12 +1,6 @@
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:14 [AUDIT_FAIL] user=hacker action=LOGIN target=system msg=密码错误 result=FAIL
-2025-11-21T15:12:33 [AUDIT_SUCCESS] user=admin action=LOGIN target=admin msg=登录成功 result=SUCCESS
-2025-11-21T15:21:23 [AUDIT_SUCCESS] user=guest_user action=LOGIN target=guest_user msg=登录成功 result=SUCCESS
+2025-11-22T00:12:29 [AUDIT_SUCCESS] user=admin action=LOGOUT target=admin msg=登出系统 result=SUCCESS
+2025-11-22T00:12:38 [AUDIT_SUCCESS] user=guest_user action=LOGIN target=guest_user msg=登录成功 result=SUCCESS
+2025-11-22T00:12:44 [AUDIT_FAIL] user=guest_user action=PERMISSION_CHECK target=PERMISSION:CREATE msg=权限不足：需要权限 [PERMISSION:CREATE] result=FAIL
+2025-11-22T15:42:00 [AUDIT_FAIL] user=admiin action=LOGIN target=admiin msg=登录失败: 用户不存在 result=FAIL
+2025-11-22T15:42:09 [AUDIT_SUCCESS] user=admin action=LOGIN target=admin msg=登录成功 result=SUCCESS
+2025-11-22T15:43:32 [AUDIT_SUCCESS] user=admin action=LOGIN target=admin msg=登录成功 result=SUCCESS
